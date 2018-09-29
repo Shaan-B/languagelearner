@@ -9,6 +9,6 @@ The code models the way infants can infer a speaker's "referential intentions" w
 The model searches for the optimal lexicon (set of object-word pairings) using Metropolis-Hastings MCMC sampling. Essentially, at each time-step, the code randomly mutates its current lexicon and computes a "score" for that lexicon, i.e. how well the lexicon explains the data. The model will decided whether to adopt the new lexicon based on a random formula that is influenced by the comparison of the current score and the new one.
 
 ## Getting Started
-To run the model, clone this repository. You can use pip to install its dependencies using ``pip install -r requirements.txt`` (note: it' recommended to use a virtual enivironment manager for Python to avoid conflicting dependencies and other issues).
+To run the model, clone this repository. You can use pip to install its dependencies using ``pip install -r requirements.txt`` (note: it's recommended to use a virtual enivironment manager for Python to avoid conflicting dependencies and other issues).
 
 Once the dependencies are installed, run the model with the command: ``python model.py``. As the model runs, it will output to the console periodically at predefined intervals, as well as whenever a new best-performing lexicon is discovered, along with some useful information like the lexicon's posterior score and F-score compared to the hand-coded gold standard in the Frank et al. paper.
